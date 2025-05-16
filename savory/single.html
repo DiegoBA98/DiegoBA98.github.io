@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Detalle de Artículo | Diego Badillo</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Blog personal de Diego Badillo, ingeniero en sistemas" name="keywords">
+        <meta content="Artículo detallado sobre tecnología y desarrollo web" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+                    <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/perfil.jpg" alt="Imagen de perfil">
+                    <h1 class="font-weight-bold">Diego Badillo Arias</h1>
+                    <p class="mb-4">
+                        Ingeniero en sistemas con experiencia en desarrollo web y mantenimiento de servidores, equipos de cómputo, móviles e impresoras.
+                    </p>
+                    <div class="d-flex justify-content-center mb-5">
+                        <a class="btn btn-outline-primary mr-2" href="https://www.linkedin.com/in/diegobadilloarias/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="CV.html" class="btn btn-lg btn-block btn-primary mt-auto">Contrátame</a>
+                </div>
+                <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
+                    <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+                </div>
+            </div>
+            <div class="content">
+                <!-- Barra de Navegación -->
+                <div class="container p-0">
+                    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                        <a href="" class="navbar-brand d-block d-lg-none">Menú</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav m-auto">
+                                <a href="index.html" class="nav-item nav-link">Inicio</a>
+                                <a href="about.html" class="nav-item nav-link">Sobre mí</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Páginas</a>
+                                    <div class="dropdown-menu">
+                                        <a href="blog.html" class="dropdown-item">Blog</a>
+                                        <a href="single.html" class="dropdown-item">Detalle de Artículo</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Encabezado de Página -->
+                <div class="container py-5 px-2 bg-primary">
+                    <div class="row py-5 px-4">
+                        <div class="col-sm-6 text-center text-md-left">
+                            <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">Detalle del Artículo</h1>
+                        </div>
+                        <div class="col-sm-6 text-center text-md-right">
+                            <div class="d-inline-flex pt-2">
+                                <h4 class="m-0 text-white"><a class="text-white" href="">Inicio</a></h4>
+                                <h4 class="m-0 text-white px-2">/</h4>
+                                <h4 class="m-0 text-white">Artículo</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detalle del Artículo -->
+                <div class="container py-5 px-2 bg-white">
+                    <div class="row px-4">
+                        <div class="col-12">
+                            <img class="img-fluid mb-4" src="img/detail.jpg" alt="Imagen principal del artículo">
+                            <h2 class="mb-3 font-weight-bold">Optimización de servidores Linux para alto rendimiento</h2>
+                            <div class="d-flex">
+                                <p class="mr-3 text-muted"><i class="fa fa-calendar-alt"></i> 15-Jun-2023</p>
+                                <p class="mr-3 text-muted"><i class="fa fa-folder"></i> Administración de Servidores</p>
+                                <p class="mr-3 text-muted"><i class="fa fa-comments"></i> 8 Comentarios</p>
+                            </div>
+                            <p>En el mundo actual de la tecnología, la optimización de servidores Linux se ha convertido en una habilidad esencial para cualquier administrador de sistemas. En este artículo, compartiré las técnicas más efectivas que he aprendido a lo largo de mi experiencia profesional para maximizar el rendimiento de tus servidores.</p>
+                            
+                            <h3 class="mb-3 font-weight-bold">Configuración básica del kernel</h3>
+                            <img class="w-50 float-left mr-4 mb-3" src="img/blog-1.jpg" alt="Terminal de Linux">
+                            <p>El kernel de Linux es el corazón de tu servidor y su configuración adecuada puede marcar una diferencia significativa en el rendimiento. Comenzaremos analizando los parámetros esenciales que deben ajustarse según el uso específico de tu servidor. Para servidores web, por ejemplo, es crucial optimizar los parámetros relacionados con las conexiones de red y el manejo de archivos abiertos.</p>
+                            
+                            <p>Una de las primeras modificaciones que recomiendo es ajustar los parámetros de la pila TCP/IP. Configuraciones como <code>net.ipv4.tcp_tw_reuse</code> y <code>net.ipv4.tcp_fin_timeout</code> pueden mejorar significativamente el rendimiento de las aplicaciones web. También es importante revisar los límites de archivos abiertos (<code>fs.file-max</code>) y los ajustes de memoria compartida.</p>
+                            
+                            <h3 class="mb-3 font-weight-bold">Monitoreo y análisis</h3>
+                            <p>Antes de realizar cualquier optimización, es fundamental establecer un sistema de monitoreo adecuado. Herramientas como <strong>htop</strong>, <strong>iotop</strong> y <strong>nmon</strong> proporcionan información valiosa sobre el uso de recursos. Personalmente, recomiendo configurar <strong>Netdata</strong> o <strong>Prometheus</strong> con <strong>Grafana</strong> para un monitoreo continuo y detallado.</p>
+                            
+                            <p>El análisis periódico de logs es otra práctica esencial. Herramientas como <strong>logrotate</strong> ayudan a mantener los logs manejables, mientras que <strong>goaccess</strong> puede proporcionar información valiosa sobre el tráfico web cuando se trata de servidores HTTP.</p>
+                            
+                            <h3 class="mb-3 font-weight-bold">Optimización de servicios</h3>
+                            <p>Cada servicio que ejecutes en tu servidor debe estar configurado para maximizar su eficiencia. Para servidores web como Nginx o Apache, ajustar el número de workers y las configuraciones de buffer puede mejorar significativamente el rendimiento. En bases de datos como MySQL o PostgreSQL, la configuración del tamaño de buffers y cachés es crítica.</p>
+                        </div>
+                        
+                        <div class="col-12 py-4">
+                            <a href="" class="btn btn-sm btn-outline-primary mb-1">Linux</a>
+                            <a href="" class="btn btn-sm btn-outline-primary mb-1">Servidores</a>
+                            <a href="" class="btn btn-sm btn-outline-primary mb-1">Optimización</a>
+                            <a href="" class="btn btn-sm btn-outline-primary mb-1">Administración</a>
+                            <a href="" class="btn btn-sm btn-outline-primary mb-1">Redes</a>
+                        </div>
+                        
+                        <div class="col-12 py-4">
+                            <div class="btn-group btn-group-lg w-100">
+                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-angle-left mr-2"></i> Artículo Anterior</button>
+                                <button type="button" class="btn btn-outline-primary">Siguiente Artículo<i class="fa fa-angle-right ml-2"></i></button>
+                            </div> 
+                        </div>
+                        
+                        <div class="col-12 py-4">
+                            <h3 class="mb-4 font-weight-bold">3 Comentarios</h3>
+                            <div class="media mb-4">
+                                <img src="img/user.jpg" alt="Usuario" class="mr-3 mt-1 rounded-circle" style="width:60px;">
+                                <div class="media-body">
+                                    <h4>Carlos Martínez <small><i>16-Jun-2023 a las 10:30am</i></small></h4>
+                                    <p>Excelente artículo Diego. Justo estaba buscando información sobre optimización de servidores para un proyecto que estoy desarrollando. ¿Podrías recomendar algún libro adicional sobre el tema?</p>
+                                    <button class="btn btn-sm btn-light">Responder</button>
+                                </div>
+                            </div>
+                            <div class="media mb-4">
+                                <img src="img/user.jpg" alt="Usuario" class="mr-3 mt-1 rounded-circle" style="width:60px;">
+                                <div class="media-body">
+                                    <h4>Ana Rodríguez <small><i>15-Jun-2023 a las 5:45pm</i></small></h4>
+                                    <p>Muy buen contenido. He implementado algunas de tus recomendaciones y ya veo mejoras en el rendimiento de mis servidores. Gracias por compartir tu conocimiento.</p>
+                                    <button class="btn btn-sm btn-light">Responder</button>
+                                    <div class="media mt-4">
+                                        <img src="img/user.jpg" alt="Usuario" class="mr-3 mt-1 rounded-circle" style="width:60px;">
+                                        <div class="media-body">
+                                            <h4>Diego Badillo <small><i>15-Jun-2023 a las 6:30pm</i></small></h4>
+                                            <p>Gracias Ana por tu comentario. Me alegra saber que las recomendaciones te han sido útiles. Si necesitas ayuda con configuraciones específicas, no dudes en preguntar.</p>
+                                            <button class="btn btn-sm btn-light">Responder</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <h3 class="mb-4 font-weight-bold">Deja un comentario</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Nombre *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="website">Sitio web</label>
+                                    <input type="url" class="form-control" id="website">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Mensaje *</label>
+                                    <textarea id="message" cols="30" rows="5" class="form-control" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Publicar Comentario" class="btn btn-primary">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pie de Página -->
+                <div class="container py-4 bg-secondary text-center">
+                    <p class="m-0 text-white">
+                        &copy; <a class="text-white font-weight-bold" href="#">Diego Badillo</a>. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Botón para volver arriba -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+        <!-- Librerías JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
